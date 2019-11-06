@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>Timestamp</td>
+        <td>Name</td>
+        <td>Service</td>
+        <td>Region</td>
+        <td>Rperiod</td>
+        <td>Details</td>
+        <td>ProjectName</td>
+        <td>ApprovedBy</td>
+        <td>Prioriy</td>
+    </tr>
+    {{range $y, $x := . }}
+        <tr>
+            <td>{{ $x.Timestamp }}</td>
+            <td>{{ $x.Name }}</td>
+            <td>{{ $x.Service }}</td>
+            <td>{{ $x.Region }}</td>
+            <td>{{ $x.Rperiod }}</td>
+            <td>{{ $x.Details }}</td>
+            <td>{{ $x.ProjectName }}</td>
+            <td>{{ $x.ApprovedBy }}</td>
+            <td>{{ $x.Prioriy }}</td>
+        </tr>{{end}}
+</table>
+</body>
+</html>
+
